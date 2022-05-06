@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import 'rxjs/add/Observable/interval';
+// import 'rxjs/add/Observable/delay';
 import 'rxjs/add/Observable/map';
 import 'rxjs/add/Observable/takeWhile';
 import 'rxjs/add/Observable/do';
@@ -16,7 +17,7 @@ export class AppComponent {
   current = 0; // current second timer is at
 
 start() {
-  const interval = Observable.interval(100);
+  const delay = Observable.delay(100);
 }
 
 
